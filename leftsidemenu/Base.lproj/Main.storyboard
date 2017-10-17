@@ -50,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="-191.19999999999999" y="114.69265367316342"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Left MenuTVC-->
         <scene sceneID="ekv-Q9-PWs">
             <objects>
-                <tableViewController id="QEg-FA-N2q" sceneMemberID="viewController">
+                <tableViewController id="QEg-FA-N2q" customClass="LeftMenuTVC" customModule="leftsidemenu" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="x5l-Wp-XP4">
                         <rect key="frame" x="0.0" y="0.0" width="240" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -149,7 +149,7 @@
         <!--Main-->
         <scene sceneID="y78-g5-3IC">
             <objects>
-                <viewController id="9MK-R2-JHG" sceneMemberID="viewController">
+                <viewController id="9MK-R2-JHG" customClass="MainViewController" customModule="leftsidemenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ID4-5n-0u8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -182,10 +182,10 @@
             </objects>
             <point key="canvasLocation" x="999" y="853"/>
         </scene>
-        <!--View Controller-->
+        <!--Page1 View Controller-->
         <scene sceneID="rVd-h6-hFU">
             <objects>
-                <viewController id="SuH-oy-S1k" sceneMemberID="viewController">
+                <viewController id="SuH-oy-S1k" customClass="Page1ViewController" customModule="leftsidemenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gyN-Sn-QYb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,10 +209,10 @@
             </objects>
             <point key="canvasLocation" x="-558" y="1613"/>
         </scene>
-        <!--View Controller-->
+        <!--Page2 View Controller-->
         <scene sceneID="Tp9-Wz-CN3">
             <objects>
-                <viewController id="Wyg-km-eXL" sceneMemberID="viewController">
+                <viewController id="Wyg-km-eXL" customClass="Page2ViewController" customModule="leftsidemenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AVE-HY-vIZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,10 +236,10 @@
             </objects>
             <point key="canvasLocation" x="190" y="1612"/>
         </scene>
-        <!--View Controller-->
+        <!--Page3 View Controller-->
         <scene sceneID="qE4-dW-8G4">
             <objects>
-                <viewController id="cMt-mI-mRR" sceneMemberID="viewController">
+                <viewController id="cMt-mI-mRR" customClass="Page3ViewController" customModule="leftsidemenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PgE-qZ-vXA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
