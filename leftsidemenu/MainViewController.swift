@@ -9,16 +9,13 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
-    @IBAction func ShowMenuBtn(_ sender: Any) {
-        
-        NotificationCenter.default.post(name: Notification.Name("toggelLeftSideMenu"), object: nil)
-        print("debug: toggelLeftSideMenu")
-    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let menuButton = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(menuBarButtonTapped))
+        self.navigationItem.leftBarButtonItem = menuButton
         
         //Add observer for page1
         NotificationCenter.default.addObserver(self, selector: #selector(showPage1), name: Notification.Name(observers.showPage1.rawValue), object: nil)
@@ -28,6 +25,11 @@ class MainViewController: UIViewController {
         
         //Add observer for page3
         NotificationCenter.default.addObserver(self, selector: #selector(showPage3), name: Notification.Name(observers.showPage3.rawValue), object: nil)
+    }
+    
+    @objc
+    func menuBarButtonTapped(){
+        NotificationCenter.default.post(name: Notification.Name("toggelLeftSideMenu"), object: nil)
     }
     
     @objc

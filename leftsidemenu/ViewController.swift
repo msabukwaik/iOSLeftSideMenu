@@ -18,7 +18,6 @@ class ViewController: UIViewController {
         
         //Create toggelgeMenuObserver
         NotificationCenter.default.addObserver(self, selector: #selector(toggelLeftSideMenu), name: Notification.Name(observers.toggelLeftSideMenu.rawValue) , object: nil)
-        print("Debug : view did load is called")
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,7 +27,6 @@ class ViewController: UIViewController {
     
     @objc
     func toggelLeftSideMenu() {
-        print("debug: toggelLeftSideMenu has been called")
         if (LeftMenuConstraint.constant == -200)
         {
             LeftMenuConstraint.constant = 0

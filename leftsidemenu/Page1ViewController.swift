@@ -14,6 +14,19 @@ class Page1ViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //Hide back button
+        self.navigationItem.hidesBackButton = true
+        
+        // Do any additional setup after loading the view.
+        let menuButton = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(menuBarButtonTapped))
+        self.navigationItem.leftBarButtonItem = menuButton
+        self.navigationItem.title = "Page 1"
+    }
+    
+    @objc
+    func menuBarButtonTapped(){
+        NotificationCenter.default.post(name: Notification.Name("toggelLeftSideMenu"), object: nil)
     }
 
     override func didReceiveMemoryWarning() {

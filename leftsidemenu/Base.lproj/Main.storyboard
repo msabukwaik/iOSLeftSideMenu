@@ -181,18 +181,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="El5-fW-6bq"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Main" id="wFa-QV-jcC">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="5SH-rY-Fxl">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qOJ-QY-f31">
-                                <rect key="frame" x="16" y="7" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Menu"/>
-                                <connections>
-                                    <action selector="ShowMenuBtn:" destination="9MK-R2-JHG" eventType="touchUpInside" id="lOU-VN-oJL"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Main" id="wFa-QV-jcC"/>
                     <connections>
                         <segue destination="SuH-oy-S1k" kind="show" identifier="showPage1Segue" id="kIK-PP-hzD"/>
                         <segue destination="Wyg-km-eXL" kind="show" identifier="showPage2Segue" id="ThX-dj-5VD"/>
