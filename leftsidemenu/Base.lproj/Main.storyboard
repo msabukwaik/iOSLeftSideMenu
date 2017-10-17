@@ -152,9 +152,6 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="SuH-oy-S1k" kind="show" identifier="showPage1Segue" id="PXa-Zl-cH9"/>
-                        <segue destination="Wyg-km-eXL" kind="show" identifier="showPage2Segue" id="4g3-Yi-Ban"/>
-                        <segue destination="cMt-mI-mRR" kind="show" identifier="showPage3Segue" id="1Fl-fW-tq2"/>
                         <segue destination="9MK-R2-JHG" kind="relationship" relationship="rootViewController" id="sUr-gl-geN"/>
                     </connections>
                 </navigationController>
@@ -196,6 +193,11 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="SuH-oy-S1k" kind="show" identifier="showPage1Segue" id="kIK-PP-hzD"/>
+                        <segue destination="Wyg-km-eXL" kind="show" identifier="showPage2Segue" id="ThX-dj-5VD"/>
+                        <segue destination="cMt-mI-mRR" kind="show" identifier="showPage3Segue" id="qA0-P9-mFr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6DJ-Jm-Juj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

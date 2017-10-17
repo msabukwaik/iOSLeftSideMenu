@@ -19,6 +19,33 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //Add observer for page1
+        NotificationCenter.default.addObserver(self, selector: #selector(showPage1), name: Notification.Name(observers.showPage1.rawValue), object: nil)
+        
+        //Add observer for page2
+        NotificationCenter.default.addObserver(self, selector: #selector(showPage2), name: Notification.Name(observers.showPage2.rawValue), object: nil)
+        
+        //Add observer for page3
+        NotificationCenter.default.addObserver(self, selector: #selector(showPage3), name: Notification.Name(observers.showPage3.rawValue), object: nil)
+    }
+    
+    @objc
+    func showPage1() {
+        performSegue(withIdentifier: segues.showPage1Segue.rawValue, sender: nil)
+        NotificationCenter.default.post(name: Notification.Name(observers.toggelLeftSideMenu.rawValue), object: nil)
+    }
+    
+    @objc
+    func showPage2() {
+        performSegue(withIdentifier: segues.showPage2Segue.rawValue, sender: nil)
+        NotificationCenter.default.post(name: Notification.Name(observers.toggelLeftSideMenu.rawValue), object: nil)
+    }
+    
+    @objc
+    func showPage3() {
+        performSegue(withIdentifier: segues.showPage3Segue.rawValue, sender: nil)
+        NotificationCenter.default.post(name: Notification.Name(observers.toggelLeftSideMenu.rawValue), object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,3 +65,5 @@ class MainViewController: UIViewController {
     */
 
 }
+
+

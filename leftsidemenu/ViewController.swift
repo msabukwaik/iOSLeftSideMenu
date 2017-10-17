@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         //Create toggelgeMenuObserver
-        NotificationCenter.default.addObserver(self, selector: #selector(toggelLeftSideMenu), name: Notification.Name("toggelLeftSideMenu") , object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(toggelLeftSideMenu), name: Notification.Name(observers.toggelLeftSideMenu.rawValue) , object: nil)
         print("Debug : view did load is called")
     }
 

@@ -24,6 +24,19 @@ class LeftMenuTVC: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            NotificationCenter.default.post(name: Notification.Name(observers.showPage1.rawValue), object: nil)
+        case 1:
+            NotificationCenter.default.post(name: Notification.Name(observers.showPage2.rawValue), object: nil)
+        case 2:
+            NotificationCenter.default.post(name: Notification.Name(observers.showPage3.rawValue), object: nil)
+        default:
+            print("others")
+        }
+    }
 
     // MARK: - Table view data source
     /*
