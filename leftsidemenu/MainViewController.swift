@@ -10,6 +10,11 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBAction func ShowMenuBtn(_ sender: Any) {
+        
+        NotificationCenter.default.post(name: Notification.Name("toggelLeftSideMenu"), object: nil)
+        print("debug: toggelLeftSideMenu")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
